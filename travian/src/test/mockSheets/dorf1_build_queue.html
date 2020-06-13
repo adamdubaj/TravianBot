@@ -1,0 +1,1102 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="mainLayout">
+<head>
+    <title>Travian pl5</title>
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta http-equiv="content-type"	content="text/html; charset=UTF-8" />
+    <meta name="content-language" content="pl-PL" />
+    <link href="//gpack.travian.com/1f2a0974/mainPage/lang/pl-PL/compact.css?eff1d" rel="stylesheet" type="text/css" /><link href="//gpack.travian.com/1f2a0974/mainPage/lang/pl-PL/lang.css?eff1d" rel="stylesheet" type="text/css" /><script type="text/javascript">
+	window.ajaxToken = '01400e50724efdfce0a57722d3a24c80';
+	window._player_uuid = '1179e800-35b7-11e9-1905-010000002e3f';
+</script>
+    <script type="text/javascript" src="js/default/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/default/jquery.md5.min.js"></script>
+    <script type="text/javascript" src="js/default/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="js/default/d3/d3.min.js"></script>
+    <script type="text/javascript" src="js/default/d3/d3pie.min.js"></script>
+    <script type="text/javascript" src="js/default/gsap/minified/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/default/gsap/minified/plugins/MorphSVGPlugin.min.js"></script>
+    <script type="text/javascript" src="js/Game/General/General.js"></script>
+    <script type="text/javascript">
+    window.TravianDefaults = Object.assign(
+        {"Map":{"Size":{"width":401,"height":401,"left":-200,"right":200,"bottom":-200,"top":200}}},
+        {"Season":""},
+        false || {}
+    );
+</script>
+    <script type="text/javascript" src="crypt-1553706350.js"></script>
+    <script type="text/javascript">
+    Travian.Translation.add({
+            'allgemein.anleitung': 'Instrukcja',
+            'allgemein.cancel': 'anuluj',
+            'allgemein.ok': 'OK',
+            'allgemein.close': 'zamknij',
+            'allgemein.close_with_capital_c': 'Zamknij',
+            'cropfinder.keine_ergebnisse': 'Nie znaleziono.',
+            'raidList.choose_village': 'wybierz osadę'
+        });
+    Travian.applicationId = 'T4.4 Game';
+    Travian.Game.version = '4.4';
+    Travian.Game.worldId = 'pl55';
+    Travian.Game.speed = 2;
+    Travian.Game.country = 'pl';
+    Travian.Templates = {"ButtonTemplate": "<button >\n\t<\/button>\n"};
+    Travian.surmountableSaguaroGaffes = function() {
+        return '2754d238653b1edabfd7e1a89b29e899';
+    }
+</script>
+    <script type="text/javascript">
+	Travian.Game.eventJamHtml = '<a href="http://t4.answers.travian.pl/index.php?aid=249#go2answer" target="blank" title="Travian Answers"><span class="c0 t">0:00:0</span>?</a>';
+</script>
+    <script type="text/javascript">
+	Travian.Form.UnloadHelper.message = 'Dokonałeś zmian. Czy na pewno chcesz wyjść z tej strony?';
+</script>
+    <script type="text/javascript">
+    Travian.Game.Preferences.initialize({"highlightsToggle":"true","reports_tab0":"AAAAAAEAAgADAAQABQAGAAcACAALAAwADQAOAA8AEAARABIAEwAUABUAFgAXAA==","travian_toggle_hero":"expanded","travian_toggle_infobox":"expanded","travian_toggle_villagelist":"collapsed"});
+</script>
+</head>
+<body class="v35 chrome blink village1 pl-PL  perspectiveResources  ltr ">
+<div id="reactDialogWrapper"></div>
+<div id="background">
+    <div id="headerBar"></div>
+    <div id="bodyWrapper">
+        <img style="filter:chroma();" src="img/x.gif" id="msfilter" alt="" />
+
+        <div id="header">
+            <a id="logo" href="https://www.travian.com/pl" target="_blank"
+               title="Travian"
+            ></a>
+
+
+            <ul id="navigation">
+                <li id="n1" class="villageResources">
+                    <a class="active" href="dorf1.php" accesskey="1" title="Surowce||"></a>
+                </li>
+                <li id="n2" class="villageBuildings">
+                    <a class="inactive" href="dorf2.php" accesskey="2" title="Centrum osady||"></a>
+                </li>
+                <li id="n3" class="map">
+                    <a href="karte.php" accesskey="3" title="Mapa||"></a>
+                </li>
+                <li id="n4" class="statistics">
+                    <a href="statistiken.php" accesskey="4" title="Statystyki||"></a>
+                </li>
+                <li id="n5" class="reports">
+                    <a href="berichte.php" accesskey="5" title="Raporty||Nowe raporty: 417"></a>
+                    <div class="speechBubbleContainer ">
+                        <div class="speechBubbleBackground">
+                            <div class="start">
+                                <div class="end">
+                                    <div class="middle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speechBubbleContent">99+</div>
+                    </div>
+                    <div class="clear"></div>			</li>
+                <li id="n6" class="messages">
+                    <a href="messages.php" accesskey="6" title="Wiadomości||Nowe wiadomości: 1"></a>
+                    <div class="speechBubbleContainer ">
+                        <div class="speechBubbleBackground">
+                            <div class="start">
+                                <div class="end">
+                                    <div class="middle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speechBubbleContent">1</div>
+                    </div>
+                    <div class="clear"></div>			</li>
+                <li id="n7" class="gold">
+                    <a href="#" accesskey="7" title="Kup Złote Monety" onclick="jQuery(window).trigger('startPaymentWizard', {}); this.blur(); return false;"></a>
+                </li>
+                <li class="clear">&nbsp;</li>
+            </ul>
+
+            <div id="goldSilver">
+                <div id="goldSilverContainer">
+                    <div class="gold">
+                        <img src="img/x.gif" alt="Złote Monety" title="Złote Monety" class="gold" onclick="jQuery(window).trigger('startPaymentWizard', {data:{activeTab: 'pros'}}); return false;" />
+                        <span class="ajaxReplaceableGoldAmount">0</span>
+                    </div>
+                    <div class="silver">
+                        <img src="img/x.gif" alt="Srebro" title="Srebro" class="silver" onclick="jQuery(window).trigger('startPaymentWizard', {data:{activeTab: 'pros'}}); return false;" />
+                        <span class="ajaxReplaceableSilverAmount">0</span>
+                    </div>
+                </div>
+            </div>
+            <ul id="outOfGame" class="LTR">
+                <li class="profile">
+                    <a href="spieler.php" title="Profil||Edytuj opis w profilu.">
+                        <img src="img/x.gif" alt="Profil" />
+                    </a>
+                </li>
+                <li class="options">
+                    <a href="options.php" title="Opcje||Edytuj ustawienia konta.">
+                        <img src="img/x.gif" alt="Opcje" />
+                    </a>
+                </li>
+                <li class="forum">
+                    <a target="_blank" href="http://forum.travian.pl" title="Forum||Poznaj innych graczy na naszym forum.">
+                        <img src="img/x.gif" alt="Forum" />
+                    </a>
+                </li>
+                <li class="help">
+                    <a href="help.php" title="Pomoc||Instrukcje, odpowiedzi i pomoc.">
+                        <img src="img/x.gif" alt="Pomoc" />
+                    </a>
+                </li>
+                <li class="logout ">
+                    <a href="logout.php" title="Wyloguj się||Wyloguj się z gry.">
+                        <img src="img/x.gif" alt="Wyloguj się" />
+                    </a>
+                </li>
+                <li class="clear">&nbsp;</li>
+            </ul>
+            <script type="text/javascript">
+jQuery('#outOfGame li.logout a').click(function() {
+	var windows = Travian.WindowManager.getWindows();
+	for (var i = 0; i < windows.length; i++) {
+        Travian.WindowManager.unregister(windows[i]);
+    }
+});
+</script>
+        </div>
+        <div id="center">
+
+            <div id="sidebarBeforeContent" class="sidebar beforeContent">
+
+                <div id="sidebarBoxHero" class="sidebarBox toggleable expanded ">
+                    <div class="sidebarBoxBaseBox">
+                        <div class="baseBox baseBoxTop">
+                            <div class="baseBox baseBoxBottom">
+                                <div class="baseBox baseBoxCenter"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebarBoxInnerBox">
+                        <div class="innerBox header ">
+                            <button id="heroImageButton" onclick="window.location.href='hero.php';" class="heroImageButton" type="button" title="Przegląd bohatera||Bohater jest w tej chwili w osadzie Osada: kloda.">
+                                <img class="heroImage" src="/hero_head.php?code=3600df05ea03d307581ba30fb80b71178c1301006700000000000000000000000000&amp;size=sideinfo"  title="Bohater" alt="Bohater" />
+                            </button>
+                            <div class="playerName">
+                                <a href="spieler.php">
+                                    <i class="tribe3_medium" title="Galowie"></i>
+                                </a>
+                                <a href="spieler.php" title="Profil gracza">kloda</a>
+                            </div>
+                            <div class="buttonsWrapper">
+                                <button type="button" id="button5caa4a72a0ba7" class="layoutButton auctionWhite green  " title="Aukcje||Ładowanie podpowiedzi...">
+                                    <i></i>
+                                </button>
+
+                                <script type="text/javascript">
+    jQuery('#button5caa4a72a0ba7').click(function (event) {
+        jQuery(window).trigger('buttonClicked', [event.delegateTarget, {"type":"green","loadTitle":true,"boxId":"hero","disabled":false,"speechBubble":"","class":"","id":"button5caa4a72a0ba7","redirectUrl":"hero.php?t=4","redirectUrlExternal":""}]);
+    });
+    jQuery(function() {
+        jQuery('#button5caa4a72a0ba7').one('mouseover', function(event) {
+            Travian.Game.Layout.loadLayoutButtonTitle(event.delegateTarget, 'hero', 'auctionWhite');
+        });
+    });
+</script>
+                                <button type="button" id="button5caa4a72a0bf5" class="layoutButton adventureWhite green  " title="Wyzwania||Ładowanie podpowiedzi...">
+                                    <i></i>
+                                    <div class="speechBubbleContainer ">
+                                        <div class="speechBubbleBackground">
+                                            <div class="start">
+                                                <div class="end">
+                                                    <div class="middle"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="speechBubbleContent">29</div>
+                                    </div>
+                                    <div class="clear"></div>	</button>
+
+                                <script type="text/javascript">
+    jQuery('#button5caa4a72a0bf5').click(function (event) {
+        jQuery(window).trigger('buttonClicked', [event.delegateTarget, {"type":"green","loadTitle":true,"boxId":"hero","disabled":false,"speechBubble":"29","class":"","id":"button5caa4a72a0bf5","redirectUrl":"hero.php?t=3","redirectUrlExternal":""}]);
+    });
+    jQuery(function() {
+        jQuery('#button5caa4a72a0bf5').one('mouseover', function(event) {
+            Travian.Game.Layout.loadLayoutButtonTitle(event.delegateTarget, 'hero', 'adventureWhite');
+        });
+    });
+</script>
+                            </div>
+                        </div>
+                        <div class="innerBox content">
+                            <div class="heroStatusMessage" title="Bohater jest w tej chwili w osadzie Osada: kloda.">
+                                <a href="build.php?newdid=21015&id=39&&tt=2">
+                                    <img alt="w osadzie domowej" src="img/x.gif" class="heroStatus100" />
+                                </a>
+                                w osadzie domowej</div>
+
+                            <div class="progressBars">
+                                <div class="heroHealthBarBox alive" title="Życie: &#x202d;&#x202d;100&#x202c;&#37;&#x202c;">
+                                    <a href="hero.php?t=1">
+                                        <img src="img/x.gif" class="injury" alt="Życie" title="Życie" />
+                                    </a>
+                                    <div class="bar" style="width:100%">&nbsp;</div>
+                                </div>
+
+                                <div class="heroXpBarBox" title="Doświadczenie: 40">
+                                    <a href="hero.php?t=1">
+                                        <img src="img/x.gif" class="iExperience" alt="Doświadczenie" title="Doświadczenie" />
+                                    </a>
+                                    <div class="bar" style="width:80%">&nbsp;</div>
+                                </div>
+                            </div>		</div>
+                        <div class="innerBox footer">
+                            <button type="button" class="toggle" onclick="" title="Ukryj dodatkowe informacje">
+                                <svg class="toggle-caret" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 32.9">
+                                    <style>
+                .caret{fill:url(#caret_to_bottom_fill); stroke:url(#caret_to_bottom_stroke);}
+            </style>
+                                    <linearGradient id="caret_to_bottom_fill" x1="22.4983" x2="22.4983" y1="26.6416" y2="8.0344" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 -1 0 33.833)">
+                                        <stop offset=".1147" stop-color="#DADED4"/>
+                                        <stop offset=".1452" stop-color="#F9FBF7"/>
+                                        <stop offset=".1551" stop-color="#FFFFFF"/>
+                                    </linearGradient>
+
+                                    <linearGradient id="caret_to_bottom_stroke" x1="22.4983" x2="22.4983" y1="26.6416" y2="8.0344" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 -1 0 33.833)">
+                                        <stop offset="0" stop-color="#7C9A58"/>
+                                        <stop offset=".2" stop-color="#60A200"/>
+                                        <stop offset=".4" stop-color="#63A500"/>
+                                        <stop offset="1" stop-color="#7DB211"/>
+                                    </linearGradient>
+                                    <path class="down_glow" d="M39 5.9c-.4-.5-1-.8-1.5-.9H7.4c-.6 0-1.1.2-1.5.9C5.5 6.3 5 7.7 5 9c0 .7 0 2.5.5 3.1l15.1 15.1c.4.5 1.3.7 1.9.7.6 0 1.5-.2 2-.7l14.9-15c.4-.5.6-2 .6-2.7.1-1.2-.5-3.4-1-3.6z"/>
+                                    <path class="up_glow" d="M39.2,8.2c-0.4-0.5-1.6-1-2.1-1.1l-29.2,0c-0.6,0-1.6,0.4-2.1,1C5.4,8.6,5,9.7,5,11 c0,0.7,0.1,3.3,1.3,4.8l13,13.1c0.4,0.5,2.5,1,3.1,1c0.6,0,2.7-0.5,3.8-1.5L38.4,16c1.4-1.4,1.6-3.8,1.6-4.5 C40.1,10.3,39.9,8.7,39.2,8.2z"/>
+                                    <path class="topshadow" d="M39.8 10.8c.5-1.7.1-5.7-2.5-5.8H7.2c-2.4.1-2.4 4.6-2.1 5.6 0 .1.2.1.2.1.8-.2.9-2 3.4-2.1 6.8-.1 22.1 0 28.5.1 2.6.1 2.1 1.9 2.6 2.1z"/>
+                                    <path class="bottomshadow" d="M39.4,8.9C39,8.5,38.5,8.3,38,8.2L7.1,8.3C6.5,8.3,6,8.5,5.6,9C5.2,9.4,5,9.9,5,10.5 c0,0.6-0.2,3.6,1.7,5.6l12.7,12.8c1,0.7,2,1,3.1,1c1.1,0,2.7-0.6,3.8-1.5L38.4,16c1.9-2.1,1.6-5.1,1.6-5.7 C40.1,9.8,39.9,9.3,39.4,8.9z"/>
+                                    <path class="caret" d="M38.3 8.8c-.4-.4-.9-.6-1.4-.7H8.1c-.6 0-1.1.2-1.5.7-.4.4-.6.9-.6 1.5s.2 1 .6 1.5L21 26.2c.4.4.9.6 1.5.6s1-.2 1.5-.6l14.3-14.5c.4-.4.6-.9.6-1.5.1-.5-.1-1-.6-1.4z"/>
+                                </svg>
+                            </button>
+
+                            <script type="text/javascript">
+		jQuery(function() {
+			Travian.Translation.add({
+				'hero_collapsed': 'Wyświetl więcej informacji',
+				'hero_expanded': 'Ukryj dodatkowe informacje'
+			});
+
+			var box = jQuery('#sidebarBoxHero');
+			box.find('button.toggle').click(function(e) {
+			    this.blur();
+				Travian.Game.Layout.toggleBox(box, 'travian_toggle', 'hero');
+			});
+		});
+	</script>
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebarBoxInfobox" class="sidebarBox toggleable expanded ">
+                    <div class="sidebarBoxBaseBox">
+                        <div class="baseBox baseBoxTop">
+                            <div class="baseBox baseBoxBottom">
+                                <div class="baseBox baseBoxCenter"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebarBoxInnerBox">
+                        <div class="innerBox header ">
+                            <div class="boxTitle">Informacje</div>
+                            <span class="messageShortInfo">
+	&#x202d;&#x202d;1&#x202c;&times;&#x202c;<img class="messages unreaded" src="img/x.gif" alt="Wszystkich wiadomości: 2&lt;br /&gt;Nowe wiadomości: 1" title="Wszystkich wiadomości: 2&lt;br /&gt;Nowe wiadomości: 1" />
+</span>
+                        </div>
+                        <div class="innerBox content">
+                            <ul>
+                                <li id="infoID_49555" class="firstElement">
+                                    <a class ="infoboxDeleteButton" href="#" data-id="49555">
+                                        <img src="img/x.gif" class="del" alt="del">
+                                    </a>
+                                    <span style="font-weight:bold;">Konkurs - Ostateczna Bitwa. Część II ― Na krawędzi</span>:
+                                    <br />
+                                    <br />Drodzy!
+                                    <br />
+                                    <br />Czy doszły do Was plotki?
+                                    <br />
+                                    <br />Ostateczna bitwa jest bliższa niż kiedykolwiek i wkrótce będziemy musieli zdecydować, po której stronie staniemy do walki o Nowe Cesarstwo Rzymskie. Podążajcie ścieżką bohatera i dowiedzcie się, co przyniesie nam przyszłość.
+                                    <br />
+                                    <br /><a href="https://wbb.forum.travian.com/index.php?thread/562518-ostateczna-bitwa-%E2%80%95-cz%C4%99%C5%9B%C4%87-ii-%E2%80%95-na-kraw%C4%99dzi//" target="_blank">Link do konkursu</a>		</li>
+                                <li id="infoID_5" class="unreaded active">
+                                    <a class ="infoboxDeleteButton" href="#" data-id="5">
+                                        <img src="img/x.gif" class="del" alt="del">
+                                    </a>
+                                    artefakty pojawią się za: <span  class="timer" counting="down" value="395550">109:52:30</span>.		</li>
+                            </ul>
+
+                        </div>
+                        <div class="innerBox footer">
+                            <button type="button" class="toggle" onclick="" title="Ukryj wiadomości | Oznacz wszystkie wiadomości jako przeczytane">
+                                <svg class="toggle-caret" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 32.9">
+                                    <style>
+                .caret{fill:url(#caret_to_bottom_fill); stroke:url(#caret_to_bottom_stroke);}
+            </style>
+                                    <linearGradient id="caret_to_bottom_fill" x1="22.4983" x2="22.4983" y1="26.6416" y2="8.0344" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 -1 0 33.833)">
+                                        <stop offset=".1147" stop-color="#DADED4"/>
+                                        <stop offset=".1452" stop-color="#F9FBF7"/>
+                                        <stop offset=".1551" stop-color="#FFFFFF"/>
+                                    </linearGradient>
+
+                                    <linearGradient id="caret_to_bottom_stroke" x1="22.4983" x2="22.4983" y1="26.6416" y2="8.0344" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 -1 0 33.833)">
+                                        <stop offset="0" stop-color="#7C9A58"/>
+                                        <stop offset=".2" stop-color="#60A200"/>
+                                        <stop offset=".4" stop-color="#63A500"/>
+                                        <stop offset="1" stop-color="#7DB211"/>
+                                    </linearGradient>
+                                    <path class="down_glow" d="M39 5.9c-.4-.5-1-.8-1.5-.9H7.4c-.6 0-1.1.2-1.5.9C5.5 6.3 5 7.7 5 9c0 .7 0 2.5.5 3.1l15.1 15.1c.4.5 1.3.7 1.9.7.6 0 1.5-.2 2-.7l14.9-15c.4-.5.6-2 .6-2.7.1-1.2-.5-3.4-1-3.6z"/>
+                                    <path class="up_glow" d="M39.2,8.2c-0.4-0.5-1.6-1-2.1-1.1l-29.2,0c-0.6,0-1.6,0.4-2.1,1C5.4,8.6,5,9.7,5,11 c0,0.7,0.1,3.3,1.3,4.8l13,13.1c0.4,0.5,2.5,1,3.1,1c0.6,0,2.7-0.5,3.8-1.5L38.4,16c1.4-1.4,1.6-3.8,1.6-4.5 C40.1,10.3,39.9,8.7,39.2,8.2z"/>
+                                    <path class="topshadow" d="M39.8 10.8c.5-1.7.1-5.7-2.5-5.8H7.2c-2.4.1-2.4 4.6-2.1 5.6 0 .1.2.1.2.1.8-.2.9-2 3.4-2.1 6.8-.1 22.1 0 28.5.1 2.6.1 2.1 1.9 2.6 2.1z"/>
+                                    <path class="bottomshadow" d="M39.4,8.9C39,8.5,38.5,8.3,38,8.2L7.1,8.3C6.5,8.3,6,8.5,5.6,9C5.2,9.4,5,9.9,5,10.5 c0,0.6-0.2,3.6,1.7,5.6l12.7,12.8c1,0.7,2,1,3.1,1c1.1,0,2.7-0.6,3.8-1.5L38.4,16c1.9-2.1,1.6-5.1,1.6-5.7 C40.1,9.8,39.9,9.3,39.4,8.9z"/>
+                                    <path class="caret" d="M38.3 8.8c-.4-.4-.9-.6-1.4-.7H8.1c-.6 0-1.1.2-1.5.7-.4.4-.6.9-.6 1.5s.2 1 .6 1.5L21 26.2c.4.4.9.6 1.5.6s1-.2 1.5-.6l14.3-14.5c.4-.4.6-.9.6-1.5.1-.5-.1-1-.6-1.4z"/>
+                                </svg>
+                            </button>
+
+                            <script type="text/javascript">
+		jQuery(function() {
+			Travian.Translation.add({
+				'infobox_collapsed': 'Wyświetl więcej wiadomości',
+				'infobox_expanded': 'Ukryj wiadomości | Oznacz wszystkie wiadomości jako przeczytane'
+			});
+
+			var box = jQuery('#sidebarBoxInfobox');
+			box.find('button.toggle').click(function(e) {
+			    this.blur();
+				Travian.Game.Layout.toggleBox(box, 'travian_toggle', 'infobox');
+			});
+		});
+	</script>
+
+                            <script type="text/javascript">
+    jQuery(function() {
+        Travian.Game.Layout.setupInfoboxItemsDeletionWithMessage('Czy chcesz skasować tę wiadomość permanentnie?', 'Potwierdź');
+    });
+</script>
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebarBoxLinklist" class="sidebarBox   ">
+                    <div class="sidebarBoxBaseBox">
+                        <div class="baseBox baseBoxTop">
+                            <div class="baseBox baseBoxBottom">
+                                <div class="baseBox baseBoxCenter"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebarBoxInnerBox">
+                        <div class="innerBox header ">
+                            <div class="buttonsWrapper">
+                                <button type="button" id="button5caa4a72a1c04" class="layoutButton editWhite green  " title="Edytuj listę link&oacute;w">
+                                    <i></i>
+                                </button>
+
+                                <script type="text/javascript">
+    jQuery('#button5caa4a72a1c04').click(function (event) {
+        jQuery(window).trigger('buttonClicked', [event.delegateTarget, {"type":"green","loadTitle":false,"boxId":"","disabled":false,"speechBubble":"","class":"","id":"button5caa4a72a1c04","redirectUrl":"linklist.php","redirectUrlExternal":"","title":"Edytuj list\u0119 link\u00f3w"}]);
+    });
+</script>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="boxTitle">Lista linków</div>
+                        </div>
+                        <div class="innerBox content">
+                            <div class="linklistNotice">Edytuj listę linków i dodaj linki.</div>
+                        </div>
+                        <div class="innerBox footer">
+                        </div>
+                    </div>
+                </div>						<div class="clear"></div>
+            </div>
+
+            <div id="contentOuterContainer" class="size1">
+                <ul id="stockBar">
+                    <li id="stockBarWarehouseWrapper" class="stock" title="Magazyn">
+                        <i class="warehouse"></i>
+                        <span class="value" id="stockBarWarehouse">&#x202d;800&#x202c;</span>
+                    </li>
+                    <li id="stockBarResource1" class="stockBarButton" title="Drewno||Produkcja: 116&lt;br /&gt;Pełne za: 4:43:50&lt;br /&gt;Kliknij po więcej informacji">
+                        <div class="begin"></div>
+                        <div class="middle">
+                            <i class="r1"></i>
+                            <span id="l1" class="value">&#x202d;251&#x202c;</span>
+                            <div class="barBox">
+                                <div id="lbar1"
+                                     class="bar"
+                                     style="width:31%;"></div>
+                            </div>
+                            <a href="production.php?t=1" title="Drewno||Produkcja: 116&lt;br /&gt;Pełne za: 4:43:50&lt;br /&gt;Kliknij po więcej informacji">
+                                <img src="img/x.gif" alt=""/>
+                            </a>
+                        </div>
+                        <div class="end"></div>
+                    </li>
+                    <li id="stockBarResource2" class="stockBarButton" title="Glina||Produkcja: 104&lt;br /&gt;Pełne za: 6:01:19&lt;br /&gt;Kliknij po więcej informacji">
+                        <div class="begin"></div>
+                        <div class="middle">
+                            <i class="r2"></i>
+                            <span id="l2" class="value">&#x202d;173&#x202c;</span>
+                            <div class="barBox">
+                                <div id="lbar2"
+                                     class="bar"
+                                     style="width:22%;"></div>
+                            </div>
+                            <a href="production.php?t=2" title="Glina||Produkcja: 104&lt;br /&gt;Pełne za: 6:01:19&lt;br /&gt;Kliknij po więcej informacji">
+                                <img src="img/x.gif" alt=""/>
+                            </a>
+                        </div>
+                        <div class="end"></div>
+                    </li>
+                    <li id="stockBarResource3" class="stockBarButton" title="Żelazo||Produkcja: 96&lt;br /&gt;Pełne za: 4:34:47&lt;br /&gt;Kliknij po więcej informacji">
+                        <div class="begin"></div>
+                        <div class="middle">
+                            <i class="r3"></i>
+                            <span id="l3" class="value">&#x202d;360&#x202c;</span>
+                            <div class="barBox">
+                                <div id="lbar3"
+                                     class="bar"
+                                     style="width:45%;"></div>
+                            </div>
+                            <a href="production.php?t=3" title="Żelazo||Produkcja: 96&lt;br /&gt;Pełne za: 4:34:47&lt;br /&gt;Kliknij po więcej informacji">
+                                <img src="img/x.gif" alt=""/>
+                            </a>
+                        </div>
+                        <div class="end"></div>
+                    </li>
+                    <li id="stockBarGranaryWrapper" class="stock" title="Spichlerz">
+                        <i class="granary"></i>
+                        <span class="value" id="stockBarGranary">&#x202d;800&#x202c;</span>
+                    </li>
+                    <li id="stockBarResource4" class="stockBarButton" title="Zboże||Produkcja minus utrzymanie budynk&oacute;w: 130&lt;br /&gt;Pełne za: 1:00:42&lt;br /&gt;Kliknij po więcej informacji">
+                        <div class="begin"></div>
+                        <div class="middle">
+                            <i class="r4"></i>
+                            <span id="l4" class="value">
+                &#x202d;672&#x202c;            </span>
+                            <div class="barBox">
+                                <div id="lbar4"
+                                     class="bar"
+                                     style="width:84%;"></div>
+                            </div>
+                            <a href="production.php?t=4" title="Zboże||Produkcja minus utrzymanie budynk&oacute;w: 130&lt;br /&gt;Pełne za: 1:00:42&lt;br /&gt;Kliknij po więcej informacji">
+                                <img src="img/x.gif" alt=""/>
+                            </a>
+                        </div>
+                        <div class="end"></div>
+                    </li>
+                    <li id="stockBarFreeCropWrapper" class="stockBarButton r5">
+                        <div class="begin"></div>
+                        <div class="middle">
+                            <i class="r5"></i>
+                            <span id="stockBarFreeCrop" class="value">&#x202d;52&#x202c;</span>
+                            <a href="production.php?t=5" title="Dostępne zboże dla kolejnych budowli||Produkcja zboża netto: &amp;#x202d;126&amp;#x202c;&lt;br /&gt;Kliknij po więcej informacji">
+                                <img src="img/x.gif" alt=""/>
+                            </a>
+                        </div>
+                        <div class="end"></div>
+                    </li>
+                    <li class="clear">&nbsp;</li>
+                </ul>
+
+                <script type="text/javascript">
+    var resources = {
+        production: {"l1": 116,"l2": 104,"l3": 96,"l4": 126,"l5": 52},
+        storage: {"l1": 251.2523,"l2": 173.709,"l3": 360.3467,"l4": 672.53},
+        maxStorage: {"l1": 800,"l2": 800,"l3": 800,"l4": 800}
+    };
+</script>
+                <div class="contentTitle">
+                    <a id="closeContentButton" class="contentTitleButton" href="dorf1.php" title="Zamknij okno">&nbsp;</a>
+                    <a id="answersButton" class="contentTitleButton" href="http://t4.answers.travian.pl/index.php?aid=300#go2answer" target="_blank" title="Travian Answers">&nbsp;</a>						</div>
+                <div class="contentContainer">
+                    <div id="content" class="village1">
+                        <map name="rx" id="rx">
+
+                            <area href="build.php?id=1" coords="137,92,25" shape="circle" title="Las &lt;span class=&quot;level&quot;&gt;Poziom 2&lt;/span&gt;||Koszt ulepszania budowli do poziomu 3:&lt;br /&gt;&lt;div class=&quot;inlineIconList resourceWrapper&quot;&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r1&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;110&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r2&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;280&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r3&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;140&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r4&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;165&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" alt="Las Poziom 2"/><area href="build.php?id=2" coords="227,93,25" shape="circle" title="Pole &lt;span class=&quot;level&quot;&gt;Poziom 2&lt;/span&gt;||Koszt ulepszania budowli do poziomu 3:&lt;br /&gt;&lt;div class=&quot;inlineIconList resourceWrapper&quot;&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r1&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;195&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r2&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;250&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r3&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;195&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r4&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;55&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" alt="Pole Poziom 2"/><area href="build.php?id=3" coords="295,105,25" shape="circle" title="Las &lt;span class=&quot;level&quot;&gt;Poziom 0&lt;/span&gt;||Koszt ulepszania budowli do poziomu 1:&lt;br /&gt;&lt;div class=&quot;inlineIconList resourceWrapper&quot;&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r1&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;40&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r2&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;100&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r3&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;50&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r4&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;60&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" alt="Las Poziom 0"/><area href="build.php?id=4" coords="79,131,25" shape="circle" title="Kopalnia żelaza &lt;span class=&quot;level&quot;&gt;Poziom 0&lt;/span&gt;||Koszt ulepszania budowli do poziomu 1:&lt;br /&gt;&lt;div class=&quot;inlineIconList resourceWrapper&quot;&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r1&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;100&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r2&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;80&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r3&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;30&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r4&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;60&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" alt="Kopalnia żelaza Poziom 0"/><area href="build.php?id=5" coords="192,144,25" shape="circle" title="Kopalnia gliny &lt;span class=&quot;level&quot;&gt;Poziom 1&lt;/span&gt;||&lt;span class=&quot;notice&quot;&gt;Obecnie ulepszane do poziomu 2.&lt;/span&gt;&lt;br /&gt;Koszt ulepszania budowli do poziomu 3:&lt;br /&gt;&lt;div class=&quot;inlineIconList resourceWrapper&quot;&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r1&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;225&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r2&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;110&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r3&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;225&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r4&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;140&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" alt="Kopalnia gliny Poziom 1"/><area href="build.php?id=6" coords="249,151,25" shape="circle" title="Kopalnia gliny &lt;span class=&quot;level&quot;&gt;Poziom 0&lt;/span&gt;||Koszt ulepszania budowli do poziomu 1:&lt;br /&gt;&lt;div class=&quot;inlineIconList resourceWrapper&quot;&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r1&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;80&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r2&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;40&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r3&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;80&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r4&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;50&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" alt="Kopalnia gliny Poziom 0"/><area href="build.php?id=7" coords="334,149,25" shape="circle" title="Kopalnia żelaza &lt;span class=&quot;level&quot;&gt;Poziom 0&lt;/span&gt;||Koszt ulepszania budowli do poziomu 1:&lt;br /&gt;&lt;div class=&quot;inlineIconList resourceWrapper&quot;&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r1&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;100&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r2&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;80&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r3&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;30&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r4&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;60&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" alt="Kopalnia żelaza Poziom 0"/><area href="build.php?id=8" coords="19,182,25" shape="circle" title="Pole &lt;span class=&quot;level&quot;&gt;Poziom 0&lt;/span&gt;||Koszt ulepszania budowli do poziomu 1:&lt;br /&gt;&lt;div class=&quot;inlineIconList resourceWrapper&quot;&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r1&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;70&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r2&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;90&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r3&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;70&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r4&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;20&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" alt="Pole Poziom 0"/><area href="build.php?id=9" coords="100,183,25" shape="circle" title="Pole &lt;span class=&quot;level&quot;&gt;Poziom 0&lt;/span&gt;||Koszt ulepszania budowli do poziomu 1:&lt;br /&gt;&lt;div class=&quot;inlineIconList resourceWrapper&quot;&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r1&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;70&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r2&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;90&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r3&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;70&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r4&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;20&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" alt="Pole Poziom 0"/><area href="build.php?id=10" coords="290,183,25" shape="circle" title="Kopalnia żelaza &lt;span class=&quot;level&quot;&gt;Poziom 0&lt;/span&gt;||Koszt ulepszania budowli do poziomu 1:&lt;br /&gt;&lt;div class=&quot;inlineIconList resourceWrapper&quot;&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r1&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;100&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r2&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;80&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r3&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;30&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r4&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;60&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" alt="Kopalnia żelaza Poziom 0"/><area href="build.php?id=11" coords="377,183,25" shape="circle" title="Kopalnia żelaza &lt;span class=&quot;level&quot;&gt;Poziom 0&lt;/span&gt;||Koszt ulepszania budowli do poziomu 1:&lt;br /&gt;&lt;div class=&quot;inlineIconList resourceWrapper&quot;&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r1&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;100&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r2&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;80&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r3&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;30&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r4&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;60&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" alt="Kopalnia żelaza Poziom 0"/><area href="build.php?id=12" coords="27,243,25" shape="circle" title="Pole &lt;span class=&quot;level&quot;&gt;Poziom 0&lt;/span&gt;||Koszt ulepszania budowli do poziomu 1:&lt;br /&gt;&lt;div class=&quot;inlineIconList resourceWrapper&quot;&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r1&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;70&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r2&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;90&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r3&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;70&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r4&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;20&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" alt="Pole Poziom 0"/><area href="build.php?id=13" coords="100,233,25" shape="circle" title="Pole &lt;span class=&quot;level&quot;&gt;Poziom 0&lt;/span&gt;||Koszt ulepszania budowli do poziomu 1:&lt;br /&gt;&lt;div class=&quot;inlineIconList resourceWrapper&quot;&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r1&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;70&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r2&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;90&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r3&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;70&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r4&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;20&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" alt="Pole Poziom 0"/><area href="build.php?id=14" coords="236,269,25" shape="circle" title="Las &lt;span class=&quot;level&quot;&gt;Poziom 0&lt;/span&gt;||Koszt ulepszania budowli do poziomu 1:&lt;br /&gt;&lt;div class=&quot;inlineIconList resourceWrapper&quot;&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r1&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;40&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r2&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;100&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r3&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;50&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r4&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;60&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" alt="Las Poziom 0"/><area href="build.php?id=15" coords="358,238,25" shape="circle" title="Pole &lt;span class=&quot;level&quot;&gt;Poziom 1&lt;/span&gt;||Koszt ulepszania budowli do poziomu 2:&lt;br /&gt;&lt;div class=&quot;inlineIconList resourceWrapper&quot;&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r1&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;115&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r2&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;150&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r3&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;115&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r4&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;35&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" alt="Pole Poziom 1"/><area href="build.php?id=16" coords="131,323,25" shape="circle" title="Kopalnia gliny &lt;span class=&quot;level&quot;&gt;Poziom 0&lt;/span&gt;||Koszt ulepszania budowli do poziomu 1:&lt;br /&gt;&lt;div class=&quot;inlineIconList resourceWrapper&quot;&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r1&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;80&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r2&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;40&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r3&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;80&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r4&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;50&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" alt="Kopalnia gliny Poziom 0"/><area href="build.php?id=17" coords="222,328,25" shape="circle" title="Las &lt;span class=&quot;level&quot;&gt;Poziom 0&lt;/span&gt;||Koszt ulepszania budowli do poziomu 1:&lt;br /&gt;&lt;div class=&quot;inlineIconList resourceWrapper&quot;&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r1&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;40&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r2&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;100&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r3&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;50&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r4&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;60&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" alt="Las Poziom 0"/><area href="build.php?id=18" coords="312,305,25" shape="circle" title="Kopalnia gliny &lt;span class=&quot;level&quot;&gt;Poziom 0&lt;/span&gt;||Koszt ulepszania budowli do poziomu 1:&lt;br /&gt;&lt;div class=&quot;inlineIconList resourceWrapper&quot;&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r1&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;80&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r2&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;40&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r3&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;80&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;inlineIcon resources&quot; title=&quot;&quot;&gt;&lt;i class=&quot;r4&quot;&gt;&lt;/i&gt;&lt;span class=&quot;value &quot;&gt;50&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" alt="Kopalnia gliny Poziom 0"/>	<area href="dorf2.php" coords="185,201,34" shape="circle" title="Centrum osady" alt="Centrum osady" />
+                        </map>
+                        <img id="resfeld" usemap="#rx" src="img/x.gif" alt="" />
+                        <div id="village_map" class="f3">
+
+                            <div class="level colorLayer notNow gid1 level2" style="left: 179px; top:78px;">
+                                <div class="labelLayer">2</div>
+                            </div>
+
+                            <div class="level colorLayer notNow gid4 level2" style="left: 269px; top:79px;">
+                                <div class="labelLayer">2</div>
+                            </div>
+
+                            <div class="level colorLayer notNow gid1 level0" style="left: 337px; top:91px;">
+                                <div class="labelLayer"></div>
+                            </div>
+
+                            <div class="level colorLayer notNow gid3 level0" style="left: 121px; top:117px;">
+                                <div class="labelLayer"></div>
+                            </div>
+
+                            <div class="level colorLayer notNow underConstruction gid2 level1" style="left: 234px; top:130px;">
+                                <div class="labelLayer">1</div>
+                            </div>
+
+                            <div class="level colorLayer notNow gid2 level0" style="left: 291px; top:137px;">
+                                <div class="labelLayer"></div>
+                            </div>
+
+                            <div class="level colorLayer notNow gid3 level0" style="left: 376px; top:135px;">
+                                <div class="labelLayer"></div>
+                            </div>
+
+                            <div class="level colorLayer notNow gid4 level0" style="left: 61px; top:168px;">
+                                <div class="labelLayer"></div>
+                            </div>
+
+                            <div class="level colorLayer notNow gid4 level0" style="left: 142px; top:169px;">
+                                <div class="labelLayer"></div>
+                            </div>
+
+                            <div class="level colorLayer notNow gid3 level0" style="left: 332px; top:169px;">
+                                <div class="labelLayer"></div>
+                            </div>
+
+                            <div class="level colorLayer notNow gid3 level0" style="left: 419px; top:169px;">
+                                <div class="labelLayer"></div>
+                            </div>
+
+                            <div class="level colorLayer notNow gid4 level0" style="left: 69px; top:229px;">
+                                <div class="labelLayer"></div>
+                            </div>
+
+                            <div class="level colorLayer notNow gid4 level0" style="left: 142px; top:219px;">
+                                <div class="labelLayer"></div>
+                            </div>
+
+                            <div class="level colorLayer notNow gid1 level0" style="left: 278px; top:255px;">
+                                <div class="labelLayer"></div>
+                            </div>
+
+                            <div class="level colorLayer notNow gid4 level1" style="left: 400px; top:224px;">
+                                <div class="labelLayer">1</div>
+                            </div>
+
+                            <div class="level colorLayer notNow gid2 level0" style="left: 173px; top:309px;">
+                                <div class="labelLayer"></div>
+                            </div>
+
+                            <div class="level colorLayer notNow gid1 level0" style="left: 264px; top:314px;">
+                                <div class="labelLayer"></div>
+                            </div>
+
+                            <div class="level colorLayer notNow gid2 level0" style="left: 354px; top:291px;">
+                                <div class="labelLayer"></div>
+                            </div>
+                        </div>
+
+                        <div class="boxes buildingList">
+                            <div class="boxes-tl"></div>
+                            <div class="boxes-tr"></div>
+                            <div class="boxes-tc"></div>
+                            <div class="boxes-ml"></div>
+                            <div class="boxes-mr"></div>
+                            <div class="boxes-mc"></div>
+                            <div class="boxes-bl"></div>
+                            <div class="boxes-br"></div>
+                            <div class="boxes-bc"></div>
+                            <div class="boxes-contents cf">			<h5>W budowie:</h5>
+                                <div class="finishNow"><button type="button" value="Ukończ budowy i badania natychmiast" id="button5caa4a729c368" class="gold " title="Więcej informacji na temat natychmiastowego kończenia budowy:">
+                                    Ukończ budowy i badania natychmiast</button>
+                                    <script type="text/javascript" id="button5caa4a729c368_script">
+	jQuery(function() {
+        jQuery('button#button5caa4a729c368').click(function () {
+            jQuery(window).trigger('buttonClicked', [this, {"type":"button","value":"Uko\u0144cz budowy i badania natychmiast","name":"","id":"button5caa4a729c368","class":"gold ","title":"Wi\u0119cej informacji na temat natychmiastowego ko\u0144czenia budowy:","confirm":"","onclick":"","dialog":{"saveOnUnload":false,"cssClass":"white","draggable":false,"overlayCancel":true,"buttonOk":false,"data":{"cmd":"finishNowPopup"},"preventFormSubmit":true,"context":"finishNow","infoIcon":"http:\/\/t4.answers.travian.pl\/index.php?aid=372#go2answer"}}]);
+        });
+	});
+</script>
+                                </div>				<ul>
+                                    <li>
+                                        <a href="?d=1065326&amp;a=0&amp;c=b9225c">
+                                            <img src="img/x.gif" class="del" title="anuluj" alt="anuluj" />
+                                        </a>
+                                        <div class="name">
+                                            Kryjówka					<span class="lvl">Poziom 8</span>
+                                        </div>
+                                        <div class="buildDuration">
+                                            <span  class="timer" counting="down" value="1766">0:29:26</span> godz. Koniec o 21:36				</div>
+                                        <div class="clear"></div>
+                                    </li>
+                                    <li>
+                                        <a href="?d=1065459&amp;a=0&amp;c=b9225c">
+                                            <img src="img/x.gif" class="del" title="anuluj" alt="anuluj" />
+                                        </a>
+                                        <div class="name">
+                                            Kopalnia gliny					<span class="lvl">Poziom 2</span>
+                                        </div>
+                                        <div class="buildDuration">
+                                            <span  class="timer" counting="down" value="2046">0:34:06</span> godz. Koniec o 21:41				</div>
+                                        <div class="clear"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <script type="text/javascript">var bld=[{"stufe":8,"gid":"23","aid":"19"},{"stufe":2,"gid":"2","aid":"5"}]</script>
+
+                        <div id="map_details">
+                            <div class="movements">
+                                <div class="boxes villageList movements">
+                                    <div class="boxes-tl"></div>
+                                    <div class="boxes-tr"></div>
+                                    <div class="boxes-tc"></div>
+                                    <div class="boxes-ml"></div>
+                                    <div class="boxes-mr"></div>
+                                    <div class="boxes-mc"></div>
+                                    <div class="boxes-bl"></div>
+                                    <div class="boxes-br"></div>
+                                    <div class="boxes-bc"></div>
+                                    <div class="boxes-contents cf">								<table id="movements" cellspacing="1" cellpadding="1">
+                                        <tr>
+                                            <th class="troopMovements header" colspan="3">
+                                                Przychodzące jednostki:						</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="typ">
+                                                <a href="build.php?gid=16&tt=1#at"><img class="att1" title="Jednostki w nadchodzących atakach" src="img/x.gif"></a>							</td>
+                                            <td>
+                                                <div class="mov">
+                                                    <span class="a1">3 Atak</span>								</div>
+                                                <div class="dur_r">
+                                                    za <span  class="timer" counting="down" value="485">0:08:05</span> godz.								</div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    </div>
+                                </div>	</div>
+                            <div class="boxes villageList production">
+                                <div class="boxes-tl"></div>
+                                <div class="boxes-tr"></div>
+                                <div class="boxes-tc"></div>
+                                <div class="boxes-ml"></div>
+                                <div class="boxes-mr"></div>
+                                <div class="boxes-mc"></div>
+                                <div class="boxes-bl"></div>
+                                <div class="boxes-br"></div>
+                                <div class="boxes-bc"></div>
+                                <div class="boxes-contents cf"><table id="production" cellpadding="1" cellspacing="1">
+                                    <thead>
+                                    <tr>
+                                        <th colspan="4">
+                                            Produkcja na godzinę:			</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="ico">
+                                            <div>
+                                                <i class="r1" title="Drewno"></i>
+                                            </div>
+                                        </td>
+                                        <td class="res">
+                                            Drewno:
+                                        </td>
+                                        <td class="num">
+                                            &#x202d;116&#x202c;			</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ico">
+                                            <div>
+                                                <i class="r2" title="Glina"></i>
+                                            </div>
+                                        </td>
+                                        <td class="res">
+                                            Glina:
+                                        </td>
+                                        <td class="num">
+                                            &#x202d;104&#x202c;			</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ico">
+                                            <div>
+                                                <i class="r3" title="Żelazo"></i>
+                                            </div>
+                                        </td>
+                                        <td class="res">
+                                            Żelazo:
+                                        </td>
+                                        <td class="num">
+                                            &#x202d;96&#x202c;			</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ico">
+                                            <div>
+                                                <i class="r4" title="Zboże"></i>
+                                            </div>
+                                        </td>
+                                        <td class="res">
+                                            Zboże:
+                                        </td>
+                                        <td class="num">
+                                            &#x202d;126&#x202c;			</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                    <div>
+                                        <button type="button" value="&#x202d;&plus;&#x202d;25&#x202c;&#37;&#x202c;" id="button5caa4a729d812" class="gold productionBoostButton" title="Więcej informacji na temat bonusu do produkcji.">
+                                            &#x202d;&plus;&#x202d;25&#x202c;&#37;&#x202c;</button>
+                                        <script type="text/javascript" id="button5caa4a729d812_script">
+	jQuery(function() {
+        jQuery('button#button5caa4a729d812').click(function () {
+            jQuery(window).trigger('buttonClicked', [this, {"type":"button","value":"\u0026#x202d;\u0026plus;\u0026#x202d;25\u0026#x202c;\u0026#37;\u0026#x202c;","name":"","id":"button5caa4a729d812","class":"gold productionBoostButton","title":"Wi\u0119cej informacji na temat bonusu do produkcji.","confirm":"","onclick":"","productionBoostDialog":{"infoIcon":"http:\/\/t4.answers.travian.pl\/index.php?aid=Travian Answers#go2answer"}}]);
+        });
+	});
+</script>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boxes villageList units">
+                                <div class="boxes-tl"></div>
+                                <div class="boxes-tr"></div>
+                                <div class="boxes-tc"></div>
+                                <div class="boxes-ml"></div>
+                                <div class="boxes-mr"></div>
+                                <div class="boxes-mc"></div>
+                                <div class="boxes-bl"></div>
+                                <div class="boxes-br"></div>
+                                <div class="boxes-bc"></div>
+                                <div class="boxes-contents cf"><table id="troops" cellpadding="1" cellspacing="1">
+                                    <thead><tr>
+                                        <th colspan="3">Jednostki:</th>
+                                    </tr></thead><tbody>
+                                <tr>
+                                    <td class="ico"><a href="build.php?gid=16#td"><img class="unit uhero" src="img/x.gif"
+                                                                                       alt="Bohater"
+                                                                                       title="Bohater"/></a></td>
+                                    <td class="num">1</td>
+                                    <td class="un">Bohater</td>
+                                </tr>
+                                </tbody></table>
+                                </div>
+                            </div>	<div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear">&nbsp;</div>
+                </div>
+                <div class="contentFooter"></div>
+            </div>
+
+            <div id="sidebarAfterContent" class="sidebar afterContent ">
+
+                <div id="sidebarBoxActiveVillage" class="sidebarBox   ">
+                    <div class="sidebarBoxBaseBox">
+                        <div class="baseBox baseBoxTop">
+                            <div class="baseBox baseBoxBottom">
+                                <div class="baseBox baseBoxCenter"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebarBoxInnerBox">
+                        <div class="innerBox header ">
+                            <div class="buttonsWrapper">
+                                <button type="button" id="button5caa4a72a4da5" class="layoutButton workshopWhite green disabled " title="&lt;span class=&quot;warning&quot;&gt;W tej osadzie nie ma warsztatu.&lt;/span&gt;">
+                                    <i></i>
+                                </button>
+
+                                <script type="text/javascript">
+    jQuery('#button5caa4a72a4da5').click(function (event) {
+        jQuery(window).trigger('buttonClicked', [event.delegateTarget, {"type":"green","loadTitle":false,"boxId":"activeVillage","disabled":true,"speechBubble":"","class":"","id":"button5caa4a72a4da5","redirectUrl":"","redirectUrlExternal":""}]);
+    });
+</script>
+                                <button type="button" id="button5caa4a72a4dde" class="layoutButton stableWhite green disabled " title="&lt;span class=&quot;warning&quot;&gt;W tej osadzie nie ma stajni.&lt;/span&gt;">
+                                    <i></i>
+                                </button>
+
+                                <script type="text/javascript">
+    jQuery('#button5caa4a72a4dde').click(function (event) {
+        jQuery(window).trigger('buttonClicked', [event.delegateTarget, {"type":"green","loadTitle":false,"boxId":"activeVillage","disabled":true,"speechBubble":"","class":"","id":"button5caa4a72a4dde","redirectUrl":"","redirectUrlExternal":""}]);
+    });
+</script>
+                                <button type="button" id="button5caa4a72a4e12" class="layoutButton barracksWhite green disabled " title="&lt;span class=&quot;warning&quot;&gt;W tej osadzie nie ma koszar.&lt;/span&gt;">
+                                    <i></i>
+                                </button>
+
+                                <script type="text/javascript">
+    jQuery('#button5caa4a72a4e12').click(function (event) {
+        jQuery(window).trigger('buttonClicked', [event.delegateTarget, {"type":"green","loadTitle":false,"boxId":"activeVillage","disabled":true,"speechBubble":"","class":"","id":"button5caa4a72a4e12","redirectUrl":"","redirectUrlExternal":""}]);
+    });
+</script>
+                                <button type="button" id="button5caa4a72a4e45" class="layoutButton marketWhite green disabled " title="&lt;span class=&quot;warning&quot;&gt;W tej osadzie nie ma rynku.&lt;/span&gt;">
+                                    <i></i>
+                                </button>
+
+                                <script type="text/javascript">
+    jQuery('#button5caa4a72a4e45').click(function (event) {
+        jQuery(window).trigger('buttonClicked', [event.delegateTarget, {"type":"green","loadTitle":false,"boxId":"activeVillage","disabled":true,"speechBubble":"","class":"","id":"button5caa4a72a4e45","redirectUrl":"","redirectUrlExternal":""}]);
+    });
+</script>
+                                <div class="clear"></div>
+                            </div>
+                            <div id="villageNameField" class="boxTitle">Osada: kloda</div>
+                        </div>
+                        <div class="innerBox content">
+                            <div class="loyalty medium">
+                                Zadowolenie: <span>&#x202d;&#x202d;100&#x202c;&#37;&#x202c;</span>
+                            </div>		</div>
+                        <div class="innerBox footer">
+                            <button type="button" id="button5caa4a72a4f83" class="layoutButton editWhite green  " title="Edytuj nazwę osady.">
+                                <i></i>
+                            </button>
+
+                            <script type="text/javascript">
+    jQuery('#button5caa4a72a4f83').click(function (event) {
+        jQuery(window).trigger('buttonClicked', [event.delegateTarget, {"type":"green","loadTitle":false,"boxId":"","disabled":false,"speechBubble":"","class":"","id":"button5caa4a72a4f83","redirectUrl":"","redirectUrlExternal":"","title":"Kliknij dwa razy, by zmieni\u0107 nazw\u0119 osady","villageDialog":{"title":"Zmie\u0144 nazw\u0119 osady.","description":"Nowa nazwa osady:","saveText":"Zapisz","villageId":"21015"}}]);
+    });
+</script>
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebarBoxVillagelist" class="sidebarBox toggleable collapsed ">
+                    <div class="sidebarBoxBaseBox">
+                        <div class="baseBox baseBoxTop">
+                            <div class="baseBox baseBoxBottom">
+                                <div class="baseBox baseBoxCenter"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebarBoxInnerBox">
+                        <div class="innerBox header ">
+                            <div class="buttonsWrapper">
+                                <button type="button" id="button5caa4a72a5884" class="layoutButton toggleCoordsWhite green  toggle" title="Pokaż wsp&oacute;łrzędne">
+                                    <i></i>
+                                </button>
+
+                                <script type="text/javascript">
+    jQuery('#button5caa4a72a5884').click(function (event) {
+        jQuery(window).trigger('buttonClicked', [event.delegateTarget, {"type":"green","loadTitle":false,"boxId":"","disabled":false,"speechBubble":"","class":"toggle","id":"button5caa4a72a5884","redirectUrl":"","redirectUrlExternal":""}]);
+    });
+</script>
+                                <button type="button" id="button5caa4a72a58d3" class="layoutButton overviewWhite green  " title="Statystyki osad">
+                                    <i></i>
+                                </button>
+
+                                <script type="text/javascript">
+    jQuery('#button5caa4a72a58d3').click(function (event) {
+        jQuery(window).trigger('buttonClicked', [event.delegateTarget, {"type":"green","loadTitle":false,"boxId":"","disabled":false,"speechBubble":"","class":"","id":"button5caa4a72a58d3","redirectUrl":"dorf3.php","redirectUrlExternal":""}]);
+    });
+</script>
+                                <div class="clear"></div>
+                            </div>
+
+
+                            <div class="expansionSlotInfo" title="Osady: &#x202d;&#x202d;1&#x202c;/&#x202d;1&#x202c;&#x202c;</br>Punkty kultury wymagane do przejęcia lub założenia kolejnej osady: &#x202d;&#x202d;315&#x202c;/&#x202d;800&#x202c;&#x202c;">
+                                <div class="boxTitleAdditional">&#x202d;&#x202d;1&#x202c;/&#x202d;1&#x202c;&#x202c;</div>
+                                <div class="boxTitle">Osady</div>
+                                <div class="villageListBarBox">
+                                    <div class="bar" style="width:39.375%">&nbsp;</div>
+                                </div>
+                            </div>
+
+                            <script type="text/javascript">
+	jQuery(function() {
+				Travian.Translation.add({
+			'villagelist_collapsed': 'Pokaż współrzędne',
+			'villagelist_expanded': 'Ukryj współrzędne'
+		});
+
+		var box = jQuery('#sidebarBoxVillagelist');
+		box.find('button.toggle').click(function(e) {
+		    this.blur();
+			Travian.Game.Layout.toggleBox(box, 'travian_toggle', 'villagelist');
+		});
+	});
+</script>
+                        </div>
+                        <div class="innerBox content">
+                            <ul>
+                                <li class=" attack active" title="Osada: kloda &amp;#x202d;&lt;span class=&quot;coordinates coordinatesWrapper&quot;&gt;&lt;span class=&quot;coordinateX&quot;&gt;(&amp;#x202d;&amp;minus;&amp;#x202d;38&amp;#x202c;&amp;#x202c;&lt;/span&gt;&lt;span class=&quot;coordinatePipe&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;coordinateY&quot;&gt;&amp;#x202d;70&amp;#x202c;)&lt;/span&gt;&lt;/span&gt;&amp;#x202c;">
+                                    <a  href="?newdid=21015&amp;" accesskey="b" class="active">
+                                        <img src="img/x.gif" alt="" />
+                                        <div class="name">Osada: kloda</div>
+                                        &#x202d;<span class="coordinates coordinatesWrapper coordinatesAligned coordinatesltr"><span class="coordinateX">(&#x202d;&minus;&#x202d;38&#x202c;&#x202c;</span><span class="coordinatePipe">|</span><span class="coordinateY">&#x202d;70&#x202c;)</span></span>&#x202c;				</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="innerBox footer">
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebarBoxDailyquests" class="sidebarBox   ">
+                    <div class="sidebarBoxBaseBox">
+                        <div class="baseBox baseBoxTop">
+                            <div class="baseBox baseBoxBottom">
+                                <div class="baseBox baseBoxCenter"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebarBoxInnerBox">
+                        <div class="innerBox header ">
+                            <div class="travianBirthdayRibbon" id="travianBirthdayRibbon">
+                                <div class="headline" data-text="Codzienne zadania">
+                                    Codzienne zadania    </div>
+                            </div>
+                            <div class="boxTitle">Codziennie nagrody</div>		</div>
+                        <div class="innerBox content">
+                            <form>
+                                <div class="questAchievementContainer">
+                                    <button type="button" value="Kliknij po szczegóły" id="button5caa4a72a5d10" class="green questButtonOverviewAchievements" questButtonOverviewAchievements="1" onClick="return false;">
+                                        Kliknij po szczegóły</button>
+                                    <script type="text/javascript" id="button5caa4a72a5d10_script">
+	jQuery(function() {
+        jQuery('button#button5caa4a72a5d10').click(function () {
+            jQuery(window).trigger('buttonClicked', [this, {"type":"button","value":"Kliknij po szczeg\u00f3\u0142y","name":"","id":"button5caa4a72a5d10","class":"green questButtonOverviewAchievements","title":"","confirm":"","onclick":"","questButtonOverviewAchievements":true,"onClick":"return false;"}]);
+        });
+	});
+</script>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="innerBox footer">
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebarBoxQuestmaster" class="sidebarBox   ">
+                    <div class="sidebarBoxBaseBox">
+                        <div class="baseBox baseBoxTop">
+                            <div class="baseBox baseBoxBottom">
+                                <div class="baseBox baseBoxCenter"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebarBoxInnerBox">
+                        <div class="innerBox header ">
+                            <button id="questmasterButton" title="Wyświetl listę zadań" class="forceDisplayElement vid_3" type="button">
+                                <img class="border" alt="" src="img/x.gif" />
+                                <img class="animation" alt="" src="img/x.gif" />
+                                <img class="mentor" alt="" src="img/x.gif" />
+
+                                <div class="bigSpeechBubble newQuestSpeechBubble" title="">
+                                    <img src="img/x.gif" alt="" />
+                                </div></button>
+
+                            <div class="buttonsWrapper">
+                                <button type="button" id="button5caa4a72a8b16" class="layoutButton bulbWhite green  " title="Wyświetl pomoc do interfejsu">
+                                    <i></i>
+                                </button>
+
+                                <script type="text/javascript">
+    jQuery('#button5caa4a72a8b16').click(function (event) {
+        jQuery(window).trigger('buttonClicked', [event.delegateTarget, {"type":"green","loadTitle":false,"boxId":"","disabled":false,"speechBubble":"","class":"","id":"button5caa4a72a8b16","redirectUrl":"","redirectUrlExternal":"","overlay":[]}]);
+    });
+</script>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="boxTitle">Przegląd zadań</div>
+
+                            <script type="text/javascript">
+jQuery(function() {
+	Travian.Game.Quest.setOptions({isTutorial : false});
+	jQuery('button#questmasterButton').click(function() {
+		Travian.Game.Quest.mentorClick('');
+	});
+});
+</script>
+                        </div>
+                        <div class="innerBox content">
+                            <ul id="mentorTaskList">
+                                <li class="quest" data-questId="Battle_01" data-category="battle">
+                                    <img src="img/x.gif" alt="" class="reward" />
+                                    <a href="#">Następne wyzwanie</a>
+                                </li>
+                                <script type="text/javascript">
+				Travian.Translation.add('answers.battle_01_title', "Travian Answers");
+			</script>
+                                <li class="quest" data-questId="Battle_02" data-category="battle">
+                                    <img src="img/x.gif" alt="" class="reward" />
+                                    <a href="#">Wybuduj kryjówkę</a>
+                                </li>
+                                <script type="text/javascript">
+				Travian.Translation.add('answers.battle_02_title', "Travian Answers");
+			</script>
+                                <li class="quest" data-questId="Economy_01" data-category="economy">
+                                    <a href="#">Kopalnia żelaza</a>
+                                </li>
+                                <script type="text/javascript">
+				Travian.Translation.add('answers.economy_01_title', "Travian Answers");
+			</script>
+                                <li class="quest" data-questId="Economy_02" data-category="economy">
+                                    <a href="#">Więcej surowców</a>
+                                </li>
+                                <script type="text/javascript">
+				Travian.Translation.add('answers.economy_02_title', "Travian Answers");
+			</script>
+                                <li class="quest" data-questId="World_01" data-category="world">
+                                    <a href="#">Zobacz statystyki</a>
+                                </li>
+                                <script type="text/javascript">
+				Travian.Translation.add('answers.world_01_title', "Travian Answers");
+			</script>
+                                <li class="quest" data-questId="World_02" data-category="world">
+                                    <a href="#">Zmień nazwę osady</a>
+                                </li>
+                                <script type="text/javascript">
+				Travian.Translation.add('answers.world_02_title', "Travian Answers");
+			</script>
+                            </ul>
+
+                            <script type="text/javascript">
+	jQuery(function() {
+		Travian.Game.Quest.setOptions({
+			tutorialData: {},
+			highlightSelectors: {}		});
+        Travian.Game.Quest.addListData({"battle":{"questsTotal":15,"questsCompleted":0,"name":"Bitwa","quests":{"Battle_01":{"id":"Battle_01","name":"questV2.battle_01_name","category":"battle","stepType":"reward","currentStep":1,"stepCount":2,"steps":[{"stepId":0,"type":"task","stepDescription":null},{"stepId":1,"type":"reward"}],"answersLink":"http:\/\/t4.answers.travian.pl\/index.php?aid=429#go2answer"},"Battle_02":{"id":"Battle_02","name":"questV2.battle_02_name","category":"battle","stepType":"reward","currentStep":1,"stepCount":2,"steps":[{"stepId":0,"type":"task","stepDescription":null},{"stepId":1,"type":"reward"}],"answersLink":"http:\/\/t4.answers.travian.pl\/index.php?aid=429#go2answer"}}},"economy":{"questsTotal":12,"questsCompleted":0,"name":"Ekonomia","quests":{"Economy_01":{"id":"Economy_01","name":"questV2.economy_01_name","category":"economy","stepType":"task","currentStep":0,"stepCount":2,"steps":[{"stepId":0,"type":"task","stepDescription":null},{"stepId":1,"type":"reward"}],"answersLink":"http:\/\/t4.answers.travian.pl\/index.php?aid=429#go2answer"},"Economy_02":{"id":"Economy_02","name":"questV2.economy_02_name","category":"economy","stepType":"task","currentStep":0,"stepCount":2,"steps":[{"stepId":0,"type":"task","stepDescription":null},{"stepId":1,"type":"reward"}],"answersLink":"http:\/\/t4.answers.travian.pl\/index.php?aid=429#go2answer"}}},"world":{"questsTotal":21,"questsCompleted":0,"name":"\u015awiat","quests":{"World_01":{"id":"World_01","name":"questV2.world_01_name","category":"world","stepType":"task","currentStep":0,"stepCount":2,"steps":[{"stepId":0,"type":"task","stepDescription":null},{"stepId":1,"type":"reward"}],"answersLink":"http:\/\/t4.answers.travian.pl\/index.php?aid=429#go2answer"},"World_02":{"id":"World_02","name":"questV2.world_02_name","category":"world","stepType":"task","currentStep":0,"stepCount":2,"steps":[{"stepId":0,"type":"task","stepDescription":null},{"stepId":1,"type":"reward"}],"answersLink":"http:\/\/t4.answers.travian.pl\/index.php?aid=429#go2answer"}}}});
+		Travian.Game.Quest.bindListDelegation(jQuery('ul#mentorTaskList li'));
+		Travian.Game.Quest.createHighlights();
+		Travian.Game.Quest.initializeQuests();
+	});
+</script>
+                        </div>
+                        <div class="innerBox footer">
+                        </div>
+                    </div>
+                </div>						<div class="clear"></div>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+
+        <div id="footer" class="size1">
+            <div id="pageLinks">
+                <a href="https://www.travian.com/pl" target="_blank">Strona główna</a>
+                <a href="http://forum.travian.pl" target="_blank">Forum</a>
+                <a href="https://www.travian.com/pl/links.php" target="_blank">Linki</a>
+                <a href="http://t4.answers.travian.pl/" target="_blank">FAQ - Answers</a>
+                <a href="https://www.travian.com/pl/spielregeln.php" target="_blank">Zasady gry</a>
+                <a href="https://www.travian.com/pl/agb.php" target="_blank">Regulamin</a>
+                <a href="https://www.travian.com/pl/impressum.php" target="_blank">Kontakt</a>
+                <div class="clear"></div>
+            </div>
+            <p class="copyright">© 2004-2019 Travian Games GmbH</p>
+        </div>
+
+        <div id="servertime" class="stime">
+            Czas serwera:&nbsp;
+            <span  class="timer" counting="up" value="1554664050">21:07:30</span></div>							</div>
+
+
+    <div id="ce"></div>
+
+
+</div>
+<script type="text/javascript">
+			var T4_feature_flags = {"vacationMode":true,"territory":false,"heroitems":true,"allianceBonus":true,"boostedStart":false,"pushingProtectionAlways":false,"tribesEgyptiansAndHuns":false,"hideFoolsArtifacts":false,"welcomeScreen":false};
+			Travian.Game.language = "pl-PL";
+		</script>
+
+
+
+
+</body>
+</html>
